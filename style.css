@@ -1,0 +1,19 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #cb9dff;
+}
+.about {
+  background-color: #9f9dff;
+}
+.galeri {
+  background-color: #cb9dff;
+}
+.kontak {
+  background-color: #9f9dff;
+}
+footer {
+  background-color: #8d0000;
+}
+section {
+  padding-top: 5rem;
+}
