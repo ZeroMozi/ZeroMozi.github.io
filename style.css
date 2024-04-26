@@ -8,8 +8,17 @@
 .motivasi {
   background-color: #cb9dff;
 }
-.kontak {
+.galeri {
   background-color: #9f9dff;
+}
+.galeri-img {
+  width: 100%;
+}
+#galeri .row > * {
+  padding: 0;
+}
+.kontak {
+  background-color: #cb9dff;
 }
 footer {
   background-color: #8d0000;
