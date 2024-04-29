@@ -33,6 +33,9 @@
               <a class="nav-link" href="#motivasi">My Motivation</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#my-games">My Games</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#galeri">Gallery</a>
             </li>
             <li class="nav-item">
@@ -134,6 +137,29 @@
           </div>
         </div>
       </div>
+      <section id="my-games" class="my-games">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <h2>My Games</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-lg-6 mb-3">
+              <div class="game-box">
+                <h4 class="game-name">Honor Of Kings</h4>
+                <img src="img/game/logohok.png" alt="Honor Of Kings" class="hok-img" />
+                <a href="https://www.honorofkings.com/" class="btn btn-light game-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6 mb-3">
+              <div class="game-box">
+                <h4 class="game-name">Arena Of Valor</h4>
+                <img src="img/game/logoaov.png" alt="Arena Of Valor" class="aov-img" />
+                <a href="https://main.aov.garena.co.id/" class="btn btn-light game-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#9f9dff"
@@ -313,6 +339,15 @@
             console.log('Success!', response);
           })
           .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+    <!-- Tilt JS -->
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll('.game-box'), {
+        max: 30,
+        speed: 1000,
+        glare: true,
       });
     </script>
   </body>

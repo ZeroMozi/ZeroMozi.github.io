@@ -26,3 +26,96 @@ footer {
 section {
   padding-top: 5rem;
 }
+/* My Games Section */
+.game-box {
+  position: relative;
+  background-color: #8d0000;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+.game-box::before {
+  content: 'MY';
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+.game-box:hover::before {
+  opacity: 0.2;
+}
+.game-box::after {
+  content: 'GAME';
+  position: absolute;
+  color: #fff;
+  font-size: 5em;
+  font-weight: bold;
+  font-style: italic;
+  top: 335px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+.game-box:hover::after {
+  opacity: 0.2;
+}
+.game-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+  z-index: 1;
+}
+.game-box:hover .game-name {
+  top: 20px;
+  opacity: 1;
+}
+.game-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 3;
+}
+.game-box:hover .game-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+.hok-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 80px);
+  max-width: 400px;
+  transition: 0.5s;
+  z-index: 2;
+}
+.game-box:hover .hok-img {
+  transform: translate3d(-50%, -50%, 80px) scale(1.3);
+}
+.aov-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 80px);
+  max-width: 240px;
+  transition: 0.5s;
+  z-index: 2;
+}
+.game-box:hover .aov-img {
+  transform: translate3d(-50%, -50%, 80px) scale(1.3);
+}
